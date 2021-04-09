@@ -13,22 +13,31 @@ module.exports = {
         port: 9000,
     },
     module: {
-        rules: [{
-        test: /\.scss$/,
-        use: [
-            MiniCssExtractPlugin.loader,
+        rules: [
             {
-                loader: 'css-loader'
+                test: /\.scss$/,
+                use: [
+                        MiniCssExtractPlugin.loader,
+                        {
+                            loader: 'css-loader'
+                        },
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                            sourceMap: true,
+                            // options...
+                            }
+                        }
+                    ]
             },
             {
-                loader: 'sass-loader',
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                loader: 'file-loader',
                 options: {
-                sourceMap: true,
-                // options...
+                    name: 'assets/images/[name].[ext]?[contenthash]',
                 }
-            }
-            ]
-        }]
+            },
+        ]
     },
     plugins: [
         new MiniCssExtractPlugin({
