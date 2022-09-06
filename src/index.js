@@ -1,5 +1,6 @@
 require('./styles.scss');
 import acrifolium from './assets/images/acrifolium.jpg';
+import sdv from './assets/images/sdv.png';
 import totalEnergies from './assets/images/total-energies.jpeg';
 import m3Groupe from './assets/images/m3-groupe.jpeg';
 import axa from './assets/images/axa.png';
