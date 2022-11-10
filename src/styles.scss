@@ -12,15 +12,17 @@ $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 $white: #fff;
 $blue: #268CB3;
+$red: #da291c;
+$black: #333;
 
 // Update Bulma's global variables
 // $family-sans-serif: "Nunito", sans-serif;
 $family-sans-serif: "Open Sans";
 $size-5: 1em;
-$grey-dark: $brown;
+$grey-dark: $black;
 $grey-light: $beige-light;
-$primary: $blue;
-$link: $brown;
+$primary: $red;
+$link: $black;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 $dimensions: 16 24 32 48 64 96 128 256;
@@ -50,12 +52,12 @@ $input-shadow: none;
 }
 
 .icon-section {
-    background-color: $blue;
+    background-color: $red;
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
 }
 
 .border-section {
-    border: 1px dashed $brown;
+    border: 1px dashed $black;
 }
