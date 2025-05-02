@@ -9,6 +9,7 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "packageManager": "yarn@3.6.3",
   "devDependencies": {
     "bulma": "^1.0.3",
     "sass": "^1.85.1",
