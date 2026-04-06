@@ -40,8 +40,39 @@ $blue: #da291c;
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+// Lucide icon sizing
+.icon svg {
+    width: 1em;
+    height: 1em;
+}
+
+.icon-section svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    stroke: white;
+}
+
+// Force lucide icons to inherit color via stroke
+.has-text-primary svg {
+    stroke: $blue;
+}
+
+.has-text-white svg {
+    stroke: white;
 }
 
 .border-section {
     border: 1px dashed $brown;
+}
+
+@media print {
+    .print-page-break {
+        page-break-before: always;
+        break-before: page;
+    }
 }

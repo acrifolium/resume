@@ -8,5 +8,5 @@ In order to print this resume you need to use the print popup fron Google Chrome
 
 Print on Chrome :
 - Margins none
-- Scale custom 58
+- Scale custom 57
 - Check background graphics
